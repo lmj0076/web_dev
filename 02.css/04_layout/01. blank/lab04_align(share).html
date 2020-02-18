@@ -14,6 +14,7 @@
         }
 
         div.table {
+            display: table;
             height: 100px;
             background-color: lavender;
 
@@ -21,6 +22,7 @@
         }
 
         div.table>div {
+            display: table-cell;
 
             vertical-align: middle;
         }
@@ -33,6 +35,9 @@
         }
 
         .center div {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
             background-color: aqua;
             margin: 0;
             /* 
@@ -47,11 +52,11 @@
     <h1>정렬 (Align)</h1>
     <h2>수직 정렬</h2>
     <div class="line">
-        line-height를 사용해서 수직 정렬
+        line-height를 사용해서 수직 정렬Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel aut recusandae error, quis sunt, sint perspiciatis rem repudiandae dolor libero doloribus, nostrum incidunt. Fuga animi consectetur maxime iusto, eum vitae.
     </div>
     <div class="table">
         <div>
-            table 속성을 사용해 수직 정렬
+            table 속성을 사용해 수직 정렬Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque numquam, dignissimos natus quos accusamus quo ex architecto placeat, reprehenderit adipisci repudiandae ad. Eligendi veritatis optio sunt dolor ratione corrupti tempora.
         </div>
     </div>
     <br>
