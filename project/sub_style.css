@@ -1,0 +1,223 @@
+/* 리스트 폰트 스타일 */
+ul.li_style {
+    font-size: 1.3em;
+}
+
+/* 타이틀(제목) 스타일 */
+h1.title {
+    color: #3af1f1;
+    text-align: center;
+}
+/* 백그라운드 이미지 설정 */
+.bgimg {
+    background: rgba(0, 0, 0, 0.7) url("https://cdn.pixabay.com/photo/2017/01/01/14/39/hacker-1944688_960_720.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: 450px;
+}
+/* 곡률 15px */
+.rd-15px {
+    border-radius: 15px;
+}
+
+/* 시맨틱 요소별 설정 */
+header {
+
+    margin: auto;
+    height: 100px;
+
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: "Gungsuh";
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+header div {
+    vertical-align: top;
+}
+
+/* 시멘틱 태그 nav 스타일 */
+nav {
+    overflow: auto;
+}
+
+nav ul {
+    float: right;
+
+    margin: 20px;
+
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+
+    padding: 10px;
+
+    font-size: 1.3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: red;
+
+}
+/* 네비게이션 포커스 시 효과 */
+nav li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 시멘틱 태그 article 스타일 */
+article {
+    overflow: auto;
+
+    margin: 10px 0 0;
+    border: 1px solid grey;
+    padding: 30px;
+
+    line-height: 1.6;
+
+}
+
+article img {
+
+    width: 40%;
+    margin: 25px;
+
+}
+/* article 이미지 포커스 시 확대 효과 */
+article img:hover {
+    width: 50%;
+}
+
+article span {
+    font-family: 'Stylish', sans-serif;
+    color: #1b262c;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+/* 포커스 시 텍스트 색 red, 텍스트 크게 */
+article span:hover {
+    color: red;
+    font-size: 3.0rem;
+}
+
+article p {
+
+    color: #0f4c75;
+    font-size: 1.2rem;
+
+}
+
+/* 포커스 시 텍스트 굵게 */
+article p:hover {
+    color: black;
+    font-weight: bold;
+}
+
+article > div {
+
+    padding: 0 20px;
+
+}
+
+article div.table {
+
+    padding: 0 10px;
+
+}
+
+article div.table div {
+
+    padding: 0 10px;
+    text-align: left;
+
+}
+
+.ref {
+
+    font-style: italic;
+    text-align: right;
+    clear: left;
+
+}
+
+/* 시멘틱 태그 footer 스타일 */
+footer {
+    overflow: auto;
+
+    height: 100px;
+
+}
+
+footer div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin-top: 50px;
+
+}
+
+footer img {
+    position: relative;
+    float: left;
+
+    height: 30px;
+    margin: 20px;
+
+}
+
+/* 아코디언 메뉴 스타일 */
+input[id*="answer"] {
+    display: none;
+}
+
+input[id*="answer"]+label {
+    display: block;
+    padding: 20px;
+    border: 1px solid #232188;
+    border-bottom: 0;
+    color: black;
+    font-weight: 900;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+input[id*="answer"]+label+div {
+    max-height: 0;
+    transition: all 355;
+    overflow: hidden;
+    background: #ebf8ff;
+    font-size: 11px;
+}
+
+input[id*="answer"]+label+div p {
+    display: inline-block;
+    padding: 20px;
+}
+
+input[id*="answer"]:checked+label+div {
+    max-height: 100px;
+}
+
+/* 버튼 스타일 */
+button {
+    width: 100px;
+    background-color: #f8585b;
+    border-radius: 12px;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+
+}

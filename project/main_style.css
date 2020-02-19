@@ -1,0 +1,21 @@
+/* 배경 */
+body {
+    background-image: radial-gradient(rgb(103, 76, 199), white);
+    font-family: 'Stylish', sans-serif;
+}
+
+/* card의 a 링크 스타일 */
+.key {
+    color: white;
+    float: right;
+}
+
+/* card 제목 스타일 */
+.card-header {
+    font-size: 2em;
+}
+
+/* card 타이틀, 텍스트 스타일 */
+.card-body {
+    font-size: 1.5em;
+}

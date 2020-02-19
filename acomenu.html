@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[id*="answer"] {
+            display: none;
+        }
+        input[id*="answer"] + label {
+            display: block;
+            padding: 20px;
+            border: 1px solid #232188;
+            border-bottom: 0;
+            color: white;
+            font-weight: 900;
+            background-color: black;
+            cursor: pointer;
+        }
+        /* input[id*="answer"] + lavel em {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            margin-top: -15px;
+            display: inline-block;
+
+        } */
+        input[id*="answer"] + label + div {
+            max-height: 0;
+            transition: all 355;
+            overflow: hidden;
+            background: #ebf8ff;
+            font-size: 11px;
+        }
+        input[id*="answer"] + label + div p {
+            display: inline-block;
+            padding: 20px;
+        }
+        input[id*="answer"]:checked + label + div {
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="accord">
+        <input type="checkbox" id="answer01">
+        <label for="answer01">HTML 환경설정<em></em></label>
+        <div><ul>
+                <li>HTML 이란?</li>
+                <li>Visual Studio 환경 설정</li>
+        </ul></div>
+        <input type="checkbox" id="answer02">
+        <label for="answer02">테그<em></em></label>
+        <div><ul>
+            <li>기본 테그</li>
+            <li>h, div, span</li>
+            <li>p, lorem</li>
+            <li>image, list, table</li>
+            <li>br, hr</li>
+        </ul></div>
+        <input type="checkbox" id="answer03">
+        <label for="answer03">클레스<em></em></label>
+        <div><ul>
+            <li>class</li>
+            <li>id</li>
+            <li>class CSS 사용법</li>
+        </ul></div>
+        <input type="checkbox" id="answer04">
+        <label for="answer04">웹 구현<em></em></label>
+        <div><ul>
+            <li>실습 예제1</li>
+            <li>실습 예제2</li>
+            <li>실습 예제3</li>
+        </ul></div>
+
+    </div>
+
+</body>
+</html>

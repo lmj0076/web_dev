@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html 소개 및 수강신청</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            /* To-do : 결과 웹 페이지 이미지와 주석을 보고, 빈 클래스에 적절한 클래스명 집어 넣기 & 주석 되어 있는 부분 풀어보면서 어떤 기능하는지 확인 */
+            /* 박스 설정 */
+
+            ul.li_style {
+                font-size: 1.3em;
+            }
+
+            h1.title {
+                color: #3af1f1;
+                text-align: center;
+            }
+
+            .bgimg {
+                background: rgba(0, 0, 0, 0.6) url("https://cdn.pixabay.com/photo/2017/01/01/14/39/hacker-1944688_960_720.jpg");
+                background-size: cover;
+                background-blend-mode: overlay;
+                background-position: 450px;
+            }
+
+            .rd-15px {
+                border-radius: 15px;
+            }
+
+            .flt-lf {
+                float: left;
+            }
+
+            .flt-rt {
+                float: right;
+
+            }
+
+            /* 시맨틱 요소별 설정 */
+            header {
+
+                margin: auto;
+                height: 100px;
+
+                color: whitesmoke;
+                font-size: 4rem;
+                font-family: "Gungsuh";
+                text-align: center;
+                text-shadow: 3px 3px black;
+            }
+
+            header div {
+                vertical-align: top;
+            }
+
+            nav {
+
+                overflow: auto;
+
+            }
+
+            nav ul {
+
+                float: right;
+
+                margin: 20px;
+
+                text-align: right;
+
+            }
+
+            nav ul li {
+
+                display: inline-block;
+
+                padding: 10px;
+
+                font-size: 1.3rem;
+
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                text-decoration-color: red;
+                
+            }
+
+            nav li:hover {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            article {
+                overflow: auto;
+
+                margin: 10px 0 0;
+                border: 1px solid grey;
+                padding: 30px;
+
+                line-height: 1.6;
+
+            }
+
+            article img {
+
+                width: 40%;
+                margin: 25px;
+
+            }
+
+            article img:hover {
+                width: 50%;
+            }
+
+            article span {
+
+                color: #1b262c;
+                font-size: 2.5rem;
+                font-weight: bold;
+
+            }
+
+            article span:hover {
+                color: red;
+                font-size: 3.0rem;
+            }
+
+            article p {
+
+                color: #0f4c75;
+                font-size: 1.2rem;
+
+            }
+
+            article p:hover {
+                color: black;
+                font-weight: bold;
+            }
+
+            article > div {
+
+                padding: 0 20px;
+
+            }
+
+            article div.table {
+
+                padding: 0 10px;
+
+            }
+
+            article div.table div {
+
+                padding: 0 10px;
+                text-align: left;
+
+            }
+
+            .ref {
+
+                font-style: italic;
+                text-align: right;
+                clear: left;
+
+            }
+
+            footer {
+
+                overflow: auto;
+
+                height: 100px;
+
+            }
+
+            footer div {
+
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                margin-top: 50px;
+
+            }
+
+            footer img {
+
+                position: relative;
+                float: left;
+
+                height: 30px;
+                margin: 20px;
+
+            }
+
+            input[id*="answer"] {
+                display: none;
+            }
+
+            input[id*="answer"]+label {
+                display: block;
+                padding: 20px;
+                border: 1px solid #232188;
+                border-bottom: 0;
+                color: black;
+                font-weight: 900;
+                background-color: wheat;
+                cursor: pointer;
+            }
+
+            input[id*="answer"]+label+div {
+                max-height: 0;
+                transition: all 355;
+                overflow: hidden;
+                background: #ebf8ff;
+                font-size: 11px;
+            }
+
+            input[id*="answer"]+label+div p {
+                display: inline-block;
+                padding: 20px;
+            }
+
+            input[id*="answer"]:checked+label+div {
+                max-height: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse" style="margin: 0px;">
+            <div class="container-fluid ">
+                <div class="navbar-header">
+                    <button
+                        type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class=" navbar-brand " href="./main.html">
+                        <i class="fa fa-commenting-o"></i>Ini Club</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+
+                        <li>
+                            <a href="#">회사 소개</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">강사 소개</a>
+                        </li>
+                        <li>
+                            <a href="#">내 강의실</a>
+                        </li>
+                        <li >
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#">JavaScript</a>
+                        </li>
+                    </ul>
+                    <!-- 검색 폼(창) -->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-log-in"></span>
+                                Login</a>
+                        </li>
+                    </ul>
+                    <form
+                        class="navbar-form navbar-right "
+                        action="https://www.google.com/search"
+                        method="get"
+                        target="_blank">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="구글 검색" name="query">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron bgimg">
+            <header class="page-header container">
+                <h1 class="title">강사 소개</h1>
+            </header>
+        </div>
+
+        <section class="container" style="width:80%">
+            <article class="rd-15px">
+                <!-- 곡률 15px -->
+                <div>
+                    <img
+                        class=" pull-left"
+                        src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png">
+                    <span >대표 강사</span>
+                    <hr>
+                    <p>
+                        변영인의 Ini Club에서 새로운 웹 세상을 만나보세요!!<br>
+                        대한민국 최고의 IT 강사의 고품질 성과 100% 강의를 만나보세요~~<br>
+                    </p>
+                    <br>
+                    <div>
+                        <span >강사 커리어 </span>
+                        <hr>
+                        <ul class="li_style">
+                            <li>1999년 씨앗대학 졸업</li>
+                            <li>2004년 새싹대학원 수석 졸업</li>
+                            <li>2008년 줄기박사 학위</li>
+                            <li>2012년 나무박사</li>
+                            <li>2016년 IT숲 제단설립</li>
+                        </ul>
+                    </div>
+                    <br>
+                    
+
+                    <div class="pull-left">
+                        <span class="pull-left">경영진 </span>
+                        <hr>
+                        <br>
+                        <p>최고의 경영진이 학생의 학습부터 취업까지 최고의 학습 환경을 만들기 위해 최선을 다하고 있습니다.<br>다양하고 풍요로운 프로그램을 만나보세요~^^~ </p>
+                        <img
+                            class="rounded-circle pull-right"
+                            src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg">
+                        <img
+                            class="rounded-circle pull-right"
+                            src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer class="footer">
+            <div>
+                <i class="fa fa-facebook-square"></i>
+                <i class="	fa fa-instagram"></i>
+                <i class="	fa fa-apple"></i>
+                <i class="	fa fa-android"></i>
+            </div>
+
+        </footer>
+    </body>
+
+</html>
