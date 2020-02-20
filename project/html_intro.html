@@ -26,7 +26,7 @@
     </head>
 
     <body>
-        <!-- profile.html 페이지와 동일한 기본적인 구성은 주석 생략 -->
+        <!-- profile.html 페이지와 같은 기본적인 구성(시맨틱 태그 부분)은 주석 생략 -->
         <nav class="navbar navbar-inverse" style="margin: 0px;">
             <div class="container-fluid ">
                 <div class="navbar-header">
@@ -47,34 +47,34 @@
                     <ul class="nav navbar-nav">
 
                         <li>
-                            <a href="#">회사 소개</a>
+                            <a href="./company.html">회사 소개</a>
                         </li>
                         <li>
-                            <a href="#">강사 소개</a>
+                            <a href="./profile.html">강사 소개</a>
                         </li>
                         <li>
-                            <a href="#">내 강의실</a>
+                            <a href="./my_class.html">내 강의실</a>
                         </li>
                         <li class="active">
                             <a href="#">HTML</a>
                         </li>
                         <li>
-                            <a href="#">CSS</a>
+                            <a href="./css_intro.html">CSS</a>
                         </li>
                         <li>
-                            <a href="#">JavaScript</a>
+                            <a href="./js_intro.html">JavaScript</a>
                         </li>
                     </ul>
                     <!-- 검색 폼(창) -->
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">
+                            <a href="https://github.com/join">
                                 <span class="glyphicon glyphicon-user"></span>
                                 Sign Up</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://github.com/">
                                 <span class="glyphicon glyphicon-log-in"></span>
                                 Login</a>
                         </li>
@@ -104,33 +104,29 @@
 
         <section class="container" style="width:80%">
             <article class="rd-15px">
-                <!-- 곡률 15px -->
                 <div>
                     <img
                         class="rd-15px pull-left"
                         src="https://cdn.pixabay.com/photo/2014/07/08/09/58/html5-386614_960_720.jpg">
-                    <span id="shape">HTML 이란?</span>
+                    <span>HTML 이란?</span>
                     <hr>
                     <p>HTML(Hyper Text Markup Language)은 가장 단순한 형태의 웹 언어이다.<br>
-                        웹 서버에 HTML 문서를 저장하고 있다가 클라이언트가 특정 HTML 페이지를 요청하면<br>
-                        해당 HTML 문서를 클라이언트로 전송한다. 그러면 클라이언트는 이 웹 페이지를
-                        <br>
-                        해석하여 웹 브라우저에 표현해 주는데 이런 웹 페이지를 정적인(Static) 웹 페이<br>
-                        지 라고 한다.
+                        웹 서버에 HTML 문서를 저장하고 있다가 클라이언트가 특정 HTML 페이지를 요청하면 해당 HTML 문서를 클라이언트로 전송한다.<br/>
+                        그러면 클라이언트는 이 웹 페이지를 해석하여 웹 브라우저에 표현해 주는데 이런 웹 페이지를 정적인(Static) 웹 페이지 라고 한다.
                     </p>
 
-                    <br>
-                    <div>
-                        <span id="shape">학습 대상</span>
+                    <!-- style로 clear:both를 줌으로써 float 상태 해체 -->
+                    <div style="clear: both;">
+                        <span>학습 대상</span>
                         <hr>
                         <p>웹 개발을 처음 해보는 초보부터!!!<br>
                             기초부터 다시 다지고자 하는 경험자까지!!!
                         </p>
                     </div>
 
-                    <br>
+                    <br><br><br>
                     <div>
-                        <span id="shape">학습 목표</span>
+                        <span >학습 목표</span>
                         <hr>
                         <p>HTML 기본 언어만으로 간단한 웹 페이지를 만들어 보자!!
                         </p>
@@ -138,7 +134,7 @@
                 </div>
 
                 <!-- 아코디언 메뉴 만들기 클릭 시 리스트 메뉴가 나타남 -->
-                <div class="accord" style="clear:both">
+                <div class="accord">
                     <input type="checkbox" id="answer01">
                     <label for="answer01">HTML 환경설정</label>
                     <div>
@@ -183,24 +179,33 @@
                         src="https://cdn.pixabay.com/photo/2016/01/07/16/47/ipad-1126136_960_720.jpg">
                     <hr>
                     <!-- 라디오 버튼을 이용하여 선택항목 만듬 -->
-                    <span class="pull-left" id="shape">수강 신청</span><br><br><br>
+                    <span class="pull-left">수강 신청</span><br><br><br>
                     <input type="radio" name="pay">단기 수강 30일 100,000원<br>
                     <input type="radio" name="pay">정규 수강 60일 150,000원<br>
                     <input type="radio" name="pay" checked="checked">평생 보유 무제한 200,000원<br><br><br>
                     <!-- 버튼 만들기, 커서 포인터 적용 동작x -->
-                    <button type="button">장바구니 담기</button>
-                    <button type="button">결제하기</button>
+                    <button class="btn_style" type="button">장바구니 담기</button>
+                    <a href="https://www.youtube.com/results?search_query=html">
+                        <button class="btn_style" type="button">결제하기</button>
+                    </a>
                 </div>
             </article>
         </section>
         <footer class="footer">
             <div>
-                <i class="fa fa-facebook-square"></i>
-                <i class="	fa fa-instagram"></i>
-                <i class="	fa fa-apple"></i>
-                <i class="	fa fa-android"></i>
+                <a href="https://ko-kr.facebook.com/">
+                    <i class="fa fa-facebook-square icon_style"></i>
+                </a>
+                <a href="https://www.instagram.com/?hl=ko">
+                    <i class="fa fa-instagram icon_style"></i>
+                </a>
+                <a href="https://www.apple.com/kr/">
+                    <i class="fa fa-apple icon_style"></i>
+                </a>
+                <a href="https://www.android.com/intl/ko_kr/">
+                    <i class="fa fa-android icon_style"></i>
+                </a>
             </div>
-
         </footer>
     </body>
 

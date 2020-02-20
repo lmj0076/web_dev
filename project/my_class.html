@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>강사 소개</title>
-
+        <title>js 소개 및 수강신청</title>
         <!-- 부트스트랩 SDN -->
         <link
             rel="stylesheet"
@@ -27,8 +26,7 @@
     </head>
 
     <body>
-        <!-- 부트스트랩을 사용하여 네비게이션 구현 -->
-        <!-- 스타일 마진 0px를 줌으로써 네비게이션과의 간격 제거 -->
+        <!-- profile.html 페이지와 같은 기본적인 구성(시맨틱 태그 부분)은 주석 생략 -->
         <nav class="navbar navbar-inverse" style="margin: 0px;">
             <div class="container-fluid ">
                 <div class="navbar-header">
@@ -41,24 +39,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- 로고 링크 클릭 시 main.html로 이동 -->
-                    <a class=" navbar-brand d-f" href="./main.html">
+                    <a class="navbar-brand " href="./main.html">
                         <i class="fa fa-commenting-o"></i>Ini Club</a>
                 </div>
-                <!-- 네비게이션 목록 리스트 / 버튼과 연동하기 위하여 id 선언-->
+
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
 
                         <li>
                             <a href="./company.html">회사 소개</a>
                         </li>
+                        <li>
+                            <a href="./profile.html">강사 소개</a>
+                        </li>
                         <li class="active">
-                            <a href="#">강사 소개</a>
+                            <a href="">내 강의실</a>
                         </li>
                         <li>
-                            <a href="./my_class.html">내 강의실</a>
-                        </li>
-                        <li >
                             <a href="./html_intro.html">HTML</a>
                         </li>
                         <li>
@@ -68,8 +65,8 @@
                             <a href="./js_intro.html">JavaScript</a>
                         </li>
                     </ul>
+                    <!-- 검색 폼(창) -->
 
-                    <!-- 로그인 회원가입 메뉴 -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="https://github.com/join">
@@ -82,10 +79,8 @@
                                 Login</a>
                         </li>
                     </ul>
-
-                    <!-- 구글 검색 폼 (검색 시 구글 검색가능) -->
                     <form
-                        class="navbar-form navbar-right"
+                        class="navbar-form navbar-right "
                         action="https://www.google.com/search"
                         method="get"
                         target="_blank">
@@ -101,59 +96,70 @@
                 </div>
             </div>
         </nav>
-        <!-- header 시맨틱 태그 + 백그라운드 이미지 -->
         <div class="jumbotron bgimg">
             <header class="page-header container">
-                <h1 class="title">강사 소개</h1>
+                <h1 class="title">내 강의실</h1>
             </header>
         </div>
 
-        <!-- 메인 섹션 콘테이너 적용 => width = 80% 변경을 위하여 스타일 사용 -->
         <section class="container" style="width:80%">
-            <!-- 곡률 15px -->
             <article class="rd-15px">
                 <div>
                     <img
-                        class=" pull-left"
-                        src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png">
-                    <span >대표 강사</span>
+                        class="rd-15px pull-left"
+                        src="https://image.shutterstock.com/image-vector/business-men-women-group-people-260nw-1198993804.jpg">
+                    <span>회원 정보</span>
                     <hr>
-                    <p>
-                        변영인의 Ini Club에서 새로운 웹 세상을 만나보세요!!<br>
-                        대한민국 최고의 IT 강사의 고품질 성과 100% 강의를 만나보세요~^^~<br>
-                    </p>
-                    <br>
+                    <li>이름: 김찬준</li><br>
+                    <li>회원번호: 33320</li><br>
+                    <li>성별: 여</li><br>
+                    <li>과정: 떡잎</li><br>
+                    <!-- style로 clear:both를 줌으로써 float 상태 해체 -->
                     <div style="clear: both;">
-                        <span >강사 커리어</span>
+                        <span>일정</span>
                         <hr>
-                        <ul class="li_style">
-                            <li>1999년 씨앗대학 졸업</li>
-                            <li>2004년 새싹대학원 수석 졸업</li>
-                            <li>2008년 줄기박사 학위</li>
-                            <li>2012년 나무박사</li>
-                            <li>2016년 IT숲 제단설립</li>
-                        </ul>
+                        <p>JavaScript 기본 복습 및 35강 수강하기</p>
                     </div>
-                    <br><br><br>
 
+                    <br><br><br>
                     <div>
-                        <span class="pull-left">경영진</span>
-                        <br><br><hr>
-                        <p>최고의 경영진이 학생의 학습부터 취업까지 최고의 학습 환경을 만들기 위해 최선을 다하고 있습니다.<br>다양하고 풍요로운 프로그램을 만나보세요~^^~
-                        </p>
-                        <br><br>
-                        <img
-                            class="rounded-circle pull-right"
-                            src="https://cdn.pixabay.com/photo/2017/10/21/12/36/training-2874597_960_720.jpg">
-                        <img
-                            class="rounded-circle pull-right"
-                            src="https://cdn.pixabay.com/photo/2016/07/02/08/17/businessman-1492563_960_720.jpg">
+                        <span >수강 내역</span>
+                        <hr>
                     </div>
                 </div>
+
+                <!-- 아코디언 메뉴 만들기 클릭 시 리스트 메뉴가 나타남 -->
+                <div class="accord">
+                    <input type="checkbox" id="answer01">
+                    <label for="answer01">수강 중인 강좌</label>
+                    <div>
+                        <ul>
+                            <li>JavaScript 2</li>
+                            <li>Visual Studio 고급</li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="answer02">
+                    <label for="answer02">수강 완료 강좌</label>
+                    <div>
+                        <ul>
+                            <li>CSS</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="answer03">
+                    <label for="answer03">결제 내역</label>
+                    <div>
+                        <ul>
+                            <li>CSS 특강</li>
+                            <li>HTML 교재</li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="answer04">
+                    <label for="answer04">1:1 문의</label>
+                </div>
+
             </article>
         </section>
-
-        <!-- 웹 아이콘을 사용하여 각각 홈페이지 링크 (페이스북, 인스타그램 등등)-->
         <footer class="footer">
             <div>
                 <a href="https://ko-kr.facebook.com/">

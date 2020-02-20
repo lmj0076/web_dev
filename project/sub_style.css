@@ -15,6 +15,12 @@ h1.title {
     background-blend-mode: overlay;
     background-position: 450px;
 }
+
+i.icon_style {
+    font-size: 3em;
+    margin-right: 2em;
+}
+
 /* 곡률 15px */
 .rd-15px {
     border-radius: 15px;
@@ -109,8 +115,8 @@ article span:hover {
 
 article p {
 
-    color: #0f4c75;
-    font-size: 1.2rem;
+    color: black;
+    font-size: 2rem;
 
 }
 
@@ -207,7 +213,7 @@ input[id*="answer"]:checked+label+div {
 }
 
 /* 버튼 스타일 */
-button {
+button.btn_style {
     width: 100px;
     background-color: #f8585b;
     border-radius: 12px;

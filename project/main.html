@@ -7,8 +7,7 @@
 
         <!-- 김찬준: 이미지, profile페이지, 네비게이션, 시맨틱 이민지: 메인 페이지, html_intro 내용, 버튼, 배경 -->
 
-        <!-- 강사 소개와 HTML 페이지만 구현 -->
-
+        <!-- 회사 소개 및 내 강의실 페이지 미구현 -->
         <!-- 부트스트랩 -->
         <style type="text/css">
             @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css");
@@ -31,66 +30,72 @@
 
     <body>
         <!-- card 부트 스트랩 및 상하, 좌우 가운데 정렬 코드의 빠른 작성과 수정을 위해 인라인 스타일 일부 사용 -->
+        <header>
+            <a class=" navbar-brand mt-1 ml-3" href="#">
+                <i class="fa fa-commenting-o"></i>Ini Club</a>
+        </header>
         <div
             style="height: 100vh"
             class="d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row" style="height: 300px;">
+            <!-- 모바일 사이즈 시 일렬로 배열하기 위하여 스타일 height 800px 지정 -->
+            <div class="container" style="height: 800px;">
+                <div class="row">
                     <div class="card-deck mx-auto">
-                        <div class="card text-white bg-primary mb-4" style="width:300px">
+                        <div class="card text-white bg-primary mb-5 col-sm" style="width:300px">
                             <div class="card-header">회사 소개</div>
                             <div class="card-body">
                                 <h5 class="card-title">Ini Club 소개</h5>
                                 <p class="card-text">오시는 길</p>
-                                <a href="" class="key">바로가기 &gt;</a>
+                                <a href="./company.html" class="key btn btn-dark">바로가기 &gt;</a>
                             </div>
                         </div>
-                        <div class="card text-white bg-secondary mb-4" style="width:300px">
+                        <div class="card text-white bg-secondary mb-5 col-sm" style="width:300px">
                             <div class="card-header">강사 소개</div>
                             <div class="card-body">
                                 <h5 class="card-title">강사 정보</h5>
                                 <p class="card-text">소개 영상</p>
-                                <a href="./profile.html" class="key">바로가기 &gt;</a>
+                                <a href="./profile.html" class="key btn btn-primary">바로가기 &gt;</a>
 
                             </div>
                         </div>
-                        <div class="card text-white bg-success mb-4" style="width:300px">
+                        <div class="card text-white bg-success mb-5 col-sm" style="width:300px">
                             <div class="card-header">내 강의실</div>
                             <div class="card-body">
                                 <h5 class="card-title">수강 내역</h5>
                                 <p class="card-text">1:1 상담</p>
-                                <a href="" class="key">내 강의실 &gt;</a>
+                                <a href="./my_class.html" class="key btn btn-secondary">내 강의실 &gt;</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="height: 300px;">
+
+                <div class="row">
                     <div class="card-deck mx-auto">
-                        <div class="card text-white bg-warning mb-4" style="width: 300px;">
+                        <div class="card text-white bg-warning mt-5 col-sm" style="width: 300px;">
                             <div class="card-header">HTML</div>
                             <div class="card-body">
                                 <h5 class="card-title">HTML 이란?</h5>
                                 <p class="card-text">커리큘럼</p>
-                                <a href="./html_intro.html" class="key">수강신청 &gt;</a>
+                                <a href="./html_intro.html" class="key btn btn-success">수강신청 &gt;</a>
 
                             </div>
                         </div>
-                        <div class="card text-white bg-danger mb-4" style="width: 300px;">
+                        <div class="card text-white bg-danger mt-5 col-sm" style="width: 300px;">
                             <div class="card-header">CSS</div>
                             <div class="card-body">
                                 <h5 class="card-title">CSS 란?</h5>
                                 <p class="card-text">커리큘럼</p>
-                                <a href="" class="key">수강신청 &gt;</a>
+                                <a href="./css_intro.html" class="key btn btn-warning">수강신청 &gt;</a>
 
                             </div>
                         </div>
-                        <div class="card text-white bg-dark mb-4" style="width: 300px;">
+                        <div class="card text-white bg-dark mt-5 col-sm" style="width: 300px;">
                             <div class="card-header">JAVA Script</div>
                             <div class="card-body">
                                 <h5 class="card-title">JAVA Script 란?</h5>
                                 <p class="card-text">커리큘럼</p>
-                                <a href="" class="key">수강신청 &gt;</a>
+                                <a href="./js_intro.html" class="key btn btn-danger">수강신청 &gt;</a>
 
                             </div>
                         </div>
