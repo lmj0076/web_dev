@@ -12,26 +12,33 @@
     <script>
         console.log("[비교 연산자]");
         // 일반적으로 '부등호/등호'와 같은 방식으로 연산
-        
-        
-        
-        
-        
-        
-        
-        
+        let a = 10;
+        let b = 20;
+        console.log(a==10); //true
+        console.log(a!=10); //false
+        console.log(a==11); //false
+        console.log(a<=b);
+        console.log(a>=b);
+
         // !는 not을 의미함, 즉 !=은 같지 않다를 의미
-        
+        console.log(a!=b);
         // ===, !== (타입도 같이) ==는 동등 연산자, ===는 일치 연산자
-        
+        let x = 10, y = '10';
+        console.log(typeof(x,y));
+        console.log(x==y);
+        console.log(x===y);
+        console.log(x!=y);
+        console.log(x!==y);
         // type을 알려주는 연산자 (typeof(피연산자))
         
     </script>
     <h2>논리 연산자</h2>
     <script>
         console.log("[논리 연산자]");
-        
-        
+        let t = true, f = false;
+        console.log('and',t&&f);
+        console.log('or',t||f);
+        console.log('not',!t&&f);
         // 두 피연산자 모두가 참이어야 참 (논리 AND 연산)
         // 두 피연산자 중 하나 이상이 참이어야 참 (논리 OR 연산)
         // 참/거짓 값을 바꿈 (true->false, false->true) (논리 NOT 연산)
